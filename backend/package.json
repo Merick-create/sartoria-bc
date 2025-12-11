@@ -2,12 +2,9 @@
   "name": "intro-express",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "engines": {
-    "node": ">=20.0.0"
-  },
   "scripts": {
     "dev": "nodemon",
-    "build": "npm rebuild && tsc",
+    "build": "tsc",
     "start": "ts-node src/index.ts",
     "start:prod": "node dist/index.js",
     "gendata": "ts-node ./example-data.ts",
@@ -17,7 +14,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "bcrypt": "^5.1.1",
     "body-parser": "^1.20.3",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.1",
@@ -39,7 +35,6 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^9.4.0",
-    "@types/bcrypt": "^5.0.2",
     "@types/body-parser": "^1.19.5",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
