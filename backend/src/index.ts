@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const PORT = process.env.PORT || 3000;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/sartoria';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/sartoria'; 
 
 mongoose.set('debug', true);
 mongoose.connect(MONGO_URI)
